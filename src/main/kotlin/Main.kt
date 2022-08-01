@@ -1,3 +1,5 @@
+import OOP.Person
+
 //GUIDELINES FOR KOTLIN PROGRAMMING LANGUAGE:
 /*
  -> No need to create functions inside a class (can be at a file level)
@@ -77,14 +79,19 @@ fun main() {
 //    }
 
 //    Extension Functions
-    fun String.getFeeling(): String {
-        return when {
-            last() == '?' -> "Curious"
-            last() == '!' -> "Excited"
-            last() == '.' -> "Calm"
-            else->  "Unknown"
-        }
-    }
-    val myVar = "Hello."
-    println(myVar.getFeeling())
+//    fun String.getFeeling(): String {
+//        return when {
+//            last() == '?' -> "Curious"
+//            last() == '!' -> "Excited"
+//            last() == '.' -> "Calm"
+//            else->  "Unknown"
+//        }
+//    }
+//    val myVar = "Hello."
+//    println(myVar.getFeeling())
+
+    val p = Person() //in Java this is written like: Person p = new Person();
+    p.age = 40
+    //Kotlin creates getters and setters for up
+    println("My name is: ${p.firstName} ${p.lastName} ${p.age}")
 }
