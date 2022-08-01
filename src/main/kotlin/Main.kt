@@ -17,12 +17,12 @@ fun main() {
     var lastName: String? = "Chbiki" // nullable
 
     lastName = null // nullable
-    println("Hello $name")
-    println("Hello ${1 + 2}") //for more complex code use curly braces
+//    println("Hello $name")
+//    println("Hello ${1 + 2}") //for more complex code use curly braces
 
     //Arrays:
-    val arr = arrayOf(150, 250, 350, 450, 550) // array of integers
-    println("Position 0 in the array: ${arr[0]}")
+//    val arr = arrayOf(150, 250, 350, 450, 550) // array of integers
+//    println("Position 0 in the array: ${arr[0]}")
 
     //Conditional Statements:
 //    val msg = "Enter your age:"
@@ -35,7 +35,7 @@ fun main() {
 //    print(result)
 
     //when statements:
-    val day = Integer.valueOf(readLine())
+//    val day = Integer.valueOf(readLine())
 //    val result = when (day) { //the result can also be assigned to a var
 //        1, 10 -> "One or ten"
 //        2 -> "Two"
@@ -44,10 +44,37 @@ fun main() {
 //    }
 
     //above code written differently:
-    val result = when { //when without args
-        day == 1 -> "One"
-        day == 2 -> "Two"
-        else -> "Other num"
-    }
-    println(result)
+//    val result = when { //when without args
+//        day == 1 -> "One"
+//        day == 2 -> "Two"
+//        else -> "Other num"
+//    }
+//    println(result)
+
+    //Loops
+    //Other collections:
+    val arr = arrayOf(150, 250, 350, 450, 550) // array of integers
+    val ia: IntArray = intArrayOf(2, 3, 4, 5, 6)
+    val list = listOf<String>("Kotlin", "Java", "C#", "React", "Nodejs")
+    val map = mapOf(1 to "Kotlin", 2 to "Java", 3 to "C#", 4 to "Nodejs")
+
+//    for (item in map) {
+////        print(): print inline
+////        println(): print in block
+//        println(item)
+//    }
+
+//    for((key, value) in map){
+//        println("$key => $value")
+//    }
+//
+//    for(i in 1..9){
+//        println(i)
+//    }
+//
+//    for(i in 1 until 9){
+//        println(i)
+//    }
+
+
 }
