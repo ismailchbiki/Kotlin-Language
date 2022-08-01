@@ -76,5 +76,15 @@ fun main() {
 //        println(i)
 //    }
 
-
+//    Extension Functions
+    fun String.getFeeling(): String {
+        return when {
+            last() == '?' -> "Curious"
+            last() == '!' -> "Excited"
+            last() == '.' -> "Calm"
+            else->  "Unknown"
+        }
+    }
+    val myVar = "Hello."
+    println(myVar.getFeeling())
 }
