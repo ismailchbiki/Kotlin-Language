@@ -1,4 +1,5 @@
-import OOP.Person
+import OOP.Employee
+import OOP.Student
 
 //GUIDELINES FOR KOTLIN PROGRAMMING LANGUAGE:
 /*
@@ -90,8 +91,22 @@ fun main() {
 //    val myVar = "Hello."
 //    println(myVar.getFeeling())
 
-    val p = Person() //in Java this is written like: Person p = new Person();
-    p.age = 40
+//    val p = Person() //in Java this is written like: Person p = new Person();
+//    p.age = 40
+
+//    val p2 = Person("Kim", "Lelie")
+
+//    println(p2.fullName)
     //Kotlin creates getters and setters for up
-    println("My name is: ${p.firstName} ${p.lastName} ${p.age}")
+//    println("My name is: ${p.firstName} ${p.lastName} ${p.age}")
+
+    //ABSTRACTION
+    val emp = Employee("Kitemana")
+//    println("Empl's id is: ${emp.id}")
+
+    val student = Student("Fontys")
+//    println(student.id)
+
+    emp.wearClothes()
+    student.wearClothes()
 }
